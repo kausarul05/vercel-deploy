@@ -10,6 +10,8 @@ export default function AuthProvider({ children }) {
     const [user, setUser] = useState()
 
     const auth = getAuth(app)
+
+    console.log(auth)
     
     const signUp = (email, password) => {
         return createUserWithEmailAndPassword(auth, email, password)
