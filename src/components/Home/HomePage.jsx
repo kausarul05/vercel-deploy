@@ -1,7 +1,7 @@
 import { Link, NavLink } from "react-router-dom"; 
 import ListedHomes from "./ListedHomes";
 import { useContext, useEffect, useState } from "react";
-import { AuthContext } from "../../authProvider/authProvider";
+import { AuthContext } from "../authProvider/authProvider";
 
 export default function HomePage() {
   const {user} = useContext(AuthContext)
